@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --VeryDarkBlue: hsl(243, 87%, 12%);
+--DesaturatedBlue: hsl(238, 22%, 44%);
+--BrightBlue: hsl(224, 93%, 58%);
+--ModerateCyan: hsl(170, 45%, 43%);
+--LightGrayish Blue: hsl(240, 75%, 98%);
+--LightGray: hsl(0, 0%, 75%);
+}
+
+img {
+    max-width: 100%;
+}
+ul{
+    display: flex;
+list-style: none;
+gap: 3rem;
+}
+
+li {
+    cursor: pointer;
+    font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1.2rem);
+    font-family: 'Raleway', sans-serif;
+    color: var(--VeryDarkBlue);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 85vw;
+    margin-inline: auto ;
+}
+
+nav{
+display: flex;
+/* align-items: flex-start; */
+justify-content: space-between;
+align-items: center;
+margin-bottom: 5rem;
+padding-block: 3rem;
+}
+
+ul{
+    display: flex;
+list-style: none;
+gap: 2rem;
+}
+
+nav img {
+    width: 20%;
+}
+
+.hero {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.hero h1,
+.hero p {
+    margin-bottom: 1.5rem;
+    color: var(--VeryDarkBlue);
+}
+
+.hero h1 {
+    font-size: clamp(1.5rem, 2.3vw + 1rem, 3rem);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+}
+.hero p {
+    font-size: clamp (0.9rem, 0.5vw + 0.8rem, 1.2rem);
+    line-height: 1.6;
+}
+
+.hero input {
+    padding: 0.9em;
+    width: 50%;
+    border: 1px solid var(--DesaturatedBlue);
+    border-radius: 0.4rem;
+    margin-right: 0.4rem;
+    font-family:  'Raleway', sans-serif;
+}
+.hero button {
+    background-color: var(--BrightBlue);
+    border: none;
+    color: white;
+    padding: 0.9em;
+    border-radius: 0.4rem;
+    padding-inline: 2.5em;
+    font-family:  'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+.hero {
+    flex-direction: column-reverse;
+}
+.hero div {
+    margin-bottom: 3rem;
+}
+.hero article {
+    text-align: center;
+}
+.hero input, .hero button {
+    width: 100%;
+}
+
+.hero input {
+    margin-bottom: 1rem;
+}
